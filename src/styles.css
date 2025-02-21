@@ -223,27 +223,46 @@ i {
     gap: 6px;
     flex-wrap: wrap;
  }
- @media (max-width: 576px) {
+ 
+  /* Mobile Devices */
+  @media (max-width: 768px) {
     header {
         background-color: var(--bg-color);
         border-radius: 5px;
+        
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 80px;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
        
     }
-    .logo a{
-        color: var(--white);
-        display: inline;
-        position: absolute;
-        top: 0;
-        left: 16px;
-        margin: 10px 0;
-    }
-    nav ul  {
-        display: flex;
-        flex-direction: column;
-        margin-right: 36px;
+    ul li {
+        margin: 6px 0px;
+        width: 100%; /* Ensure each item takes full width */
     }
     ul li a {
         color: var(--black);
+        width: 100%;
+        padding: 10px;
+        display: block;
+      
+    }
+    .logo a {
+       color: var(--white);
     }
     .profile {
         display: flex;
@@ -266,13 +285,4 @@ i {
         display: flex;
         flex-direction: column;
     }
-    /* Skills */
-    
-    .cards-container {
-        height: 300px;
-        width: 300px;
-    }
-
- }
-    
- 
+}
