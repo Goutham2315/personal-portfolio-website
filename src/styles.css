@@ -105,6 +105,7 @@ nav a:hover {
     margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 23px;
 }
 .about-me {
     display: flex;
@@ -131,8 +132,6 @@ nav a:hover {
 .skills {
     max-width: 800px;
     margin: 0px auto;
-    padding: 36px;
-
 }
 .cards-container {
     gap: 16px;
